@@ -1,11 +1,11 @@
-import * as React from 'react';
+import React from 'react';
+import Greeting from '../components/greeting';
 
 export default class extends React.Component {
   render() {    
-    return (
-      <div>
-        Hello Next.js!!
-      </div>
-    )
+    return <div>
+      <h2>Next.js Application</h2>
+      <Greeting name="John Doe"></Greeting>
+    </div>
   }
 }
