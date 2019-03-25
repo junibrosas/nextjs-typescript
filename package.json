@@ -1,0 +1,27 @@
+{
+  "name": "nextjs",
+  "version": "1.0.0",
+  "description": "A simple nextjs starter kit",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "ssr"
+  ],
+  "author": "Juni Brosas",
+  "license": "ISC",
+  "dependencies": {
+    "@types/next": "^8.0.3",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.3",
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^8.0.3",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  }
+}
