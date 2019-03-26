@@ -21,5 +21,5 @@ To check the application on the browser, go to http://localhost:3000
 
 ## Branches
 - master - overall progress of all the integrations I want to experiment on
-- with-redux - bare branch with redux integration
+- with-redux - master branch with redux integration
 - bare - next.js with typescript
