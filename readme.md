@@ -15,5 +15,7 @@ Run the application
 To check the application on the browser, go to http://localhost:3000
 
 ## Built With
-- Next.js
-- Typescript
+- next.js - SSR framework
+- typescript - Superset Javascript with strict typing
+- @zeit/next-typescript - next.js + typescript plugin
+
