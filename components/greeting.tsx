@@ -5,13 +5,17 @@ interface IProps {
   showMessage: boolean;
 }
 
-export default class extends React.Component<IProps, {}> {
+interface IState {}
+
+export default class extends React.Component<IProps, IState> {
   render() {
     const { name, showMessage } = this.props;
 
-    return <span>
-      <span>Hello, {name}.</span> 
-      {showMessage && <span> Welcome to the team!</span>}
-    </span>
+    return (
+      <span>
+        <span>Hello, {name}.</span> 
+        {showMessage && <span> Welcome to the team!</span>}
+      </span>
+    )
   }
 }

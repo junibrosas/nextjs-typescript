@@ -11,6 +11,8 @@ interface IDispatchProps {
   onShakeHands: () => void
 }
 
+interface IOwnProps {};
+
 interface State {};
 
 type Props = IStateProps;
@@ -38,4 +40,4 @@ const mapDispatchToProps = (dispatch): IDispatchProps => ({
   onShakeHands: () => dispatch({ type: 'user:toggle_shake_hands', payload: true })
 })
 
-export default connect<IStateProps, IDispatchProps, any>(mapStateToProps, mapDispatchToProps)(Page);
+export default connect<IStateProps, IDispatchProps, IOwnProps>(mapStateToProps, mapDispatchToProps)(Page);

@@ -1,16 +1,14 @@
-import { combineReducers } from "redux";
-
-interface IDefaultState {
+export interface IUserState {
   name: string;
   confirm: boolean;
 }
 
-const getDefaultState = (): IDefaultState => ({
+const getDefaultState = (): IUserState => ({
   name: 'John Doe',
   confirm: false
 });
 
-export const user = (state, action) => {
+export const userReducer = (state: IUserState, action): IUserState => {
   
   if (state === undefined) {
     state = getDefaultState();
@@ -23,12 +21,4 @@ export const user = (state, action) => {
     default:
       return state;
   }
-}
-
-const appReducer = combineReducers({
-  user: user
-});
-
-export default (state, action) => {
-  return appReducer(state, action);
 }
