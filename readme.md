@@ -19,3 +19,7 @@ To check the application on the browser, go to http://localhost:3000
 - typescript - Superset Javascript with strict typing
 - @zeit/next-typescript - next.js + typescript plugin
 
+## Branches
+- master - overall progress of all the integrations I want to experiment on
+- with-redux - bare branch with redux integration
+- bare - next.js with typescript
