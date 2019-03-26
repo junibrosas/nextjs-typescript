@@ -13,3 +13,7 @@ Run the application
 `npm run dev`
 
 To check the application on the browser, go to http://localhost:3000
+
+## Built With
+- Next.js
+- Typescript
