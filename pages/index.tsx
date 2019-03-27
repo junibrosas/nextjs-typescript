@@ -1,5 +1,5 @@
-import React from 'react';
-import Greeting from '../src/components/greeting';
+import * as React from 'react';
+import Greeting from '../src/components/greeting/greeting.component';
 import { connect } from 'react-redux';
 
 interface IStateProps {

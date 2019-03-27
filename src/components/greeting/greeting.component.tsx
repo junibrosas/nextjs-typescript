@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 interface IProps {
   name: string;
@@ -12,10 +12,9 @@ export default class extends React.Component<IProps, IState> {
     const { name, showMessage } = this.props;
 
     return (
-      <span>
-        <span>Hello, {name}.</span> 
-        {showMessage && <span> Welcome to the team!</span>}
-      </span>
+      <div>
+        <span className="greeting">Hello, {name}. {showMessage && <span>Welcome to the team!</span>}</span>
+      </div>
     )
   }
 }
