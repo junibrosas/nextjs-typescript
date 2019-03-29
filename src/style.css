@@ -1,0 +1,56 @@
+
+.md-form {
+  margin-bottom: 0;
+}
+[type='checkbox'],
+[type='radio'] {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+}
+[type='checkbox'] + label,
+[type='radio'] + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+}
+[type='radio'] + label {
+  transition: 0.28s ease;
+}
+label {
+  margin-bottom: 0.5rem;
+}
+[type='radio']:checked + label:before {
+  border-color: transparent;
+}
+[type='radio']:checked + label:after {
+  border-color: #4285f4;
+  background-color: #4285f4;
+  z-index: 0;
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+[type='radio'] + label:after,
+[type='radio'] + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 16px;
+  height: 16px;
+  z-index: 0;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  transition: 0.28s ease;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}

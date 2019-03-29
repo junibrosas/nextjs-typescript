@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {mount} from 'enzyme';
-import Greeting from './greeting.component';
+import Greeting from './Greeting';
 
 describe('Pages', () => {
   describe('Index', () => {
